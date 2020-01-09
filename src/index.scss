@@ -1,0 +1,34 @@
+/*webkit-sassui-rotatable Start*/
+$webkit-sassui-rotatable-options: (
+  duration: 0.3s,
+  items: (
+    45,
+    90,
+    180,
+    270,
+    360
+  )
+) !default;
+
+.webkit-sassui-rotatable {
+  /* prettier-ignore */
+  $items: map-get($map: $webkit-sassui-rotatable-options, $key: items );
+  $duration: map-get( $map: $webkit-sassui-rotatable-options, $key: duration );
+  /* prettier-ignore-end */
+
+  .is-rotatable {
+    transform: rotate(0);
+    transition: all $duration;
+  }
+
+  @each $item in $items {
+    &.is-#{$item} {
+      &:hover {
+        .is-rotatable {
+          transform: rotate(#{$item}deg);
+        }
+      }
+    }
+  }
+}
+/*webkit-sassui-rotatable End*/

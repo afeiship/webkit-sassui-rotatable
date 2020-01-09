@@ -1,0 +1,52 @@
+/*webkit-sassui-rotatable Start*/
+.webkit-sassui-rotatable {
+  /* prettier-ignore */
+  /* prettier-ignore-end */
+}
+
+.webkit-sassui-rotatable .is-rotatable {
+  transform: rotate(0);
+  transition: all 0.3s;
+}
+
+.webkit-sassui-rotatable.is-45:hover .is-rotatable {
+  transform: rotate(45deg);
+}
+
+.webkit-sassui-rotatable.is-90:hover .is-rotatable {
+  transform: rotate(90deg);
+}
+
+.webkit-sassui-rotatable.is-180:hover .is-rotatable {
+  transform: rotate(180deg);
+}
+
+.webkit-sassui-rotatable.is-270:hover .is-rotatable {
+  transform: rotate(270deg);
+}
+
+.webkit-sassui-rotatable.is-360:hover .is-rotatable {
+  transform: rotate(360deg);
+}
+
+/*webkit-sassui-rotatable End*/
+.test-webkit-sassui-rotatable {
+  border: 1px solid red;
+}
+
+.container {
+  width: 100px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px dashed #eee;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+}
+
+.container .webkit-sassui-rotatable {
+  width: 100px;
+  margin-bottom: 20px;
+}

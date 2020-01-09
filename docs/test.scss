@@ -1,0 +1,22 @@
+@import "../dist/index.scss";
+
+.test-webkit-sassui-rotatable {
+  border: 1px solid red;
+}
+
+.container {
+  width: 100px;
+  margin: 30px auto;
+  padding:20px;
+  border:2px dashed #eee;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .webkit-sassui-rotatable {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+}
