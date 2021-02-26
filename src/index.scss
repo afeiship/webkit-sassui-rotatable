@@ -1,5 +1,5 @@
-/*webkit-sassui-rotatable Start*/
-$webkit-sassui-rotatable-options: (
+/*wsui-rotatable Start*/
+$wsui-rotatable-options: (
   duration: 0.3s,
   items: (
     45,
@@ -10,10 +10,10 @@ $webkit-sassui-rotatable-options: (
   )
 ) !default;
 
-.webkit-sassui-rotatable {
+.wsui-rotatable {
   /* prettier-ignore */
-  $items: map-get($map: $webkit-sassui-rotatable-options, $key: items );
-  $duration: map-get( $map: $webkit-sassui-rotatable-options, $key: duration );
+  $items: map-get($map: $wsui-rotatable-options, $key: items );
+  $duration: map-get( $map: $wsui-rotatable-options, $key: duration );
   /* prettier-ignore-end */
 
   .is-rotatable {
@@ -31,4 +31,4 @@ $webkit-sassui-rotatable-options: (
     }
   }
 }
-/*webkit-sassui-rotatable End*/
+/*wsui-rotatable End*/

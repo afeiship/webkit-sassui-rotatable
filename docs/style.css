@@ -1,39 +1,35 @@
-/*webkit-sassui-rotatable Start*/
-.webkit-sassui-rotatable {
+/*wsui-rotatable Start*/
+.wsui-rotatable {
   /* prettier-ignore */
   /* prettier-ignore-end */
 }
 
-.webkit-sassui-rotatable .is-rotatable {
+.wsui-rotatable .is-rotatable {
   transform: rotate(0);
   transition: all 0.3s;
 }
 
-.webkit-sassui-rotatable.is-45:hover .is-rotatable {
+.wsui-rotatable.is-45:hover .is-rotatable {
   transform: rotate(45deg);
 }
 
-.webkit-sassui-rotatable.is-90:hover .is-rotatable {
+.wsui-rotatable.is-90:hover .is-rotatable {
   transform: rotate(90deg);
 }
 
-.webkit-sassui-rotatable.is-180:hover .is-rotatable {
+.wsui-rotatable.is-180:hover .is-rotatable {
   transform: rotate(180deg);
 }
 
-.webkit-sassui-rotatable.is-270:hover .is-rotatable {
+.wsui-rotatable.is-270:hover .is-rotatable {
   transform: rotate(270deg);
 }
 
-.webkit-sassui-rotatable.is-360:hover .is-rotatable {
+.wsui-rotatable.is-360:hover .is-rotatable {
   transform: rotate(360deg);
 }
 
-/*webkit-sassui-rotatable End*/
-.test-webkit-sassui-rotatable {
-  border: 1px solid red;
-}
-
+/*wsui-rotatable End*/
 .container {
   width: 100px;
   margin: 30px auto;
