@@ -3,16 +3,41 @@
  * description: Rotatable element.
  * homepage: https://github.com/afeiship/wsui-rotatable
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-02-27 10:17:23
  * license: MIT
  */
 
 /*wsui-rotatable Start*/
 $wsui-rotatable-options: (
-  color: #f00
+  duration: 0.3s,
+  items: (
+    45,
+    90,
+    180,
+    270,
+    360
+  )
 ) !default;
 
 .wsui-rotatable {
-  //Your code goes here.
+  /* prettier-ignore */
+  $items: map-get($map: $wsui-rotatable-options, $key: items );
+  $duration: map-get( $map: $wsui-rotatable-options, $key: duration );
+  /* prettier-ignore-end */
+
+  .is-rotatable {
+    transform: rotate(0);
+    transition: all $duration;
+  }
+
+  @each $item in $items {
+    &.is-#{$item} {
+      &:hover {
+        .is-rotatable {
+          transform: rotate(#{$item}deg);
+        }
+      }
+    }
+  }
 }
 /*wsui-rotatable End*/

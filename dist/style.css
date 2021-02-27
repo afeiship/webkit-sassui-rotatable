@@ -3,8 +3,25 @@
  * description: Rotatable element.
  * homepage: https://github.com/afeiship/wsui-rotatable
  * version: 1.0.0
- * date: 2020-12-23 15:01:37
+ * date: 2021-02-27 10:17:23
  * license: MIT
  */
 /*wsui-rotatable Start*/
+.wsui-rotatable {
+  /* prettier-ignore */
+  /* prettier-ignore-end */ }
+  .wsui-rotatable .is-rotatable {
+    transform: rotate(0);
+    transition: all 0.3s; }
+  .wsui-rotatable.is-45:hover .is-rotatable {
+    transform: rotate(45deg); }
+  .wsui-rotatable.is-90:hover .is-rotatable {
+    transform: rotate(90deg); }
+  .wsui-rotatable.is-180:hover .is-rotatable {
+    transform: rotate(180deg); }
+  .wsui-rotatable.is-270:hover .is-rotatable {
+    transform: rotate(270deg); }
+  .wsui-rotatable.is-360:hover .is-rotatable {
+    transform: rotate(360deg); }
+
 /*wsui-rotatable End*/
